@@ -1,6 +1,7 @@
 .packages-main {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .package-card {
@@ -8,6 +9,7 @@
     text-align: center;
     margin-bottom: 20px;
     box-shadow: 0px 2px 4px 0px rgba(208,208,208,0.50);
+    flex-basis: 33.3333%
 }
 
 .package-card img {

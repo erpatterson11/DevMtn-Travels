@@ -79,5 +79,19 @@ angular.module('devmtnTravel').service('mainSrv', function(){
 				id: 3544,
 				price: 1722.12
 			},
-		]
-})
+		];
+
+
+    this.getCurrentPackage = function(id) {
+
+      for (var i in this.packageInfo) {
+        if (this.packageInfo[i].id == id) {
+          console.log(this.packageInfo[i])
+          return this.packageInfo[i]
+        }
+      }
+
+    };
+
+
+}) // End of service --------------------------------------------------------------------------
