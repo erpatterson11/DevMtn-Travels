@@ -93,5 +93,16 @@ angular.module('devmtnTravel').service('mainSrv', function(){
 
     };
 
+    this.getPackagesByCountry = function(country) {
+      var packages = []
+      for (var i in this.packageInfo) {
+        if (this.packageInfo[i].country == country) {
+          console.log(this.packageInfo[i])
+          packages.push(this.packageInfo[i]);
+        }
+      }
+      return packages;
+    }
+
 
 }) // End of service --------------------------------------------------------------------------
